@@ -7,10 +7,10 @@ jobs:
         steps:
 
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Cypress Tests 
-              uses: cypress-io/github-actions@v4
+              uses: cypress-io/github-actions@v6
               with:
                 start: 'npm run dev'
                 build: 'npm run build'
